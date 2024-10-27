@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.blur {
+  filter: blur(3px);
+  opacity: 0.5;
+}
+
+@keyframes rocket {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.rocket {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem; 
+  transform: translate(-50%, -50%);
+  animation: rocket 1s infinite;
+}
